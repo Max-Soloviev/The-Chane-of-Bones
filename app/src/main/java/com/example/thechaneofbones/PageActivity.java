@@ -13,13 +13,15 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class PageActivity extends AppCompatActivity {
     private int selectedPage = 0;
     private Button buttonOne;
     private Button buttonTwo;
     private TextView pageText;
     private TextView pageTitle;
-    Page[] pagesOfTheBook;
+    ArrayList<Page> pagesOfTheBook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +38,7 @@ public class PageActivity extends AppCompatActivity {
         buttonOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSelectedPage(pagesOfTheBook[selectedPage].buttonOneAction);
+                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonOneAction);
                 showPage();
 
             }
@@ -45,17 +47,25 @@ public class PageActivity extends AppCompatActivity {
         buttonTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSelectedPage(pagesOfTheBook[selectedPage].buttonTwoAction);
+                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonTwoAction);
                 showPage();
 
             }
         });
 
+        buttonThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonThreeAction);
+                showPage();
+
+            }
+        });
     }
 
     private void showPage() {
-        pageTitle.setText(pagesOfTheBook[selectedPage].titleText);
-        pageText.setText(pagesOfTheBook[selectedPage].mainText);
+        pageTitle.setText(pagesOfTheBook.get(selectedPage).titleText);
+        pageText.setText(getString(pagesOfTheBook.get(selectedPage).mainText));
     }
 
     private void setSelectedPage(int page) {
