@@ -163,6 +163,46 @@ public class Book {
 //    pagesOfTheBook.add(new Page("Бой с черным трехглавым драконом", R.string.page_100_main_text, 93, -1, -1, -1, -1));
 //    pagesOfTheBook.add(new Page("", R.string.page_101_main_text, 204, 244, -1, -1, -1));
     pagesOfTheBook.add(new Page("", R.string.page_102_main_text, 282, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_103_main_text, 242, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_104_main_text, 180, 15, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_105_main_text, 297, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_106_main_text, 262, 266, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_107_main_text, 237, 272, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("", R.string.page_108_main_text, 47, 278, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_109_main_text, 284, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_110_main_text, -1, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_111_main_text, -1, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_112_main_text, 37, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_113_main_text, 130, 31, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_114_main_text, 190, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_115_main_text, 56, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_116_main_text, 298, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_117_main_text, 162, 51, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_118_main_text, 14, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_119_main_text, 190, 210, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_120_main_text, -1, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_121_main_text, 87, 28, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_122_main_text, 62, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_123_main_text, 134, 10, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_124_main_text, 138, 69, 189, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой с волком", R.string.page_125_main_text, 23, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_126_main_text, 114, -1, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("", R.string.page_127_main_text, 187, 48, 119, 119, -1));
+//    pagesOfTheBook.add(new Page("Бой с таинственным злодеем", R.string.page_128_main_text, 191, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_129_main_text, 124, 137, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_130_main_text, 205, 61, 118, 34, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_131_main_text, 57, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_132_main_text, 147, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_133_main_text, 143, 217, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой с варягом", R.string.page_134_main_text, 112, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_135_main_text, 66, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_136_main_text, 256, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_137_main_text, 41, 290, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_138_main_text, -1, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_139_main_text, 158, 36, 4, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой с предводителем разбойников", R.string.page_140_main_text, 9, 9, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_141_main_text, 271, 238, -1, -1, -1));
+
 
 
         return pagesOfTheBook;
