@@ -24,7 +24,7 @@ public class Book {
 //                " Если вы побеждаете, переход на 93.\n", 93, -1, -1, -1, -1));
     pagesOfTheBook.add(new Page("", R.string.page_9_main_text, 283, -1, -1, -1, -1));
     pagesOfTheBook.add(new Page("", R.string.page_10_main_text, 190, -1, -1, -1, -1));
-//    pagesOfTheBook.add(new Page("Бой с вторым драконом", "Сейчас вам пригодится вся ваша Сила.\n" +
+//    pagesOfTheBook.add(new Page("Бой со вторым драконом", "Сейчас вам пригодится вся ваша Сила.\n" +
 //                " \n" +
 //                " ВТОРОЙ ДРАКОН: Сила 12\n" +
 //                " Бросьте игральную кость два раза.\n" +
@@ -48,7 +48,7 @@ public class Book {
 //                " Если вам выпадает ВОЛШЕБНОЕ КОЛЬЦО, ваши Силы восстанавливаются.\n" +
 //                " \n" +
 //                " Если вы побеждаете в поединке, то переходите на 269.\n", 269, -1, -1, -1, -1));
-//    pagesOfTheBook.add(new Page("Бой с Базарным войном", "Ваш противник ловок и силен. Он осторожно кружит вокруг вас, крутит мечом так, что лезвие сверкает в свете факела.\n" +
+//    pagesOfTheBook.add(new Page("Бой с базарным войном", "Ваш противник ловок и силен. Он осторожно кружит вокруг вас, крутит мечом так, что лезвие сверкает в свете факела.\n" +
 //                " \n" +
 //                " БАЗАРНЫЙ ВОИН С МЕЧОМ: Сила 9\n" +
 //                " Бросьте кость дважды.\n" +
@@ -66,7 +66,7 @@ public class Book {
 //                " ВОЛШЕБНОЕ КОЛЬЦО позволяет вам выбрать любой из номеров, предложенных выше.\n", 182, 232, 39, -1, -1));
     pagesOfTheBook.add(new Page("", R.string.page_21_main_text, 153, 188, 177, -1, -1));
     pagesOfTheBook.add(new Page("", R.string.page_22_main_text, 147, -1, -1, -1, -1));
-//    pagesOfTheBook.add(new Page("Бой с вторым волком", "Судьба сейчас благоприятствует вам. Вы избавились от одного из волков.\n" +
+//    pagesOfTheBook.add(new Page("Бой со вторым волком", "Судьба сейчас благоприятствует вам. Вы избавились от одного из волков.\n" +
 //                " \n" +
 //                " ВТОРОЙ ВОЛК: Сила 12\n" +
 //                " Игральная кость бросается дважды.\n" +
@@ -261,6 +261,62 @@ public class Book {
     pagesOfTheBook.add(new Page("", R.string.page_198_main_text, 62, -1, -1, -1, -1));
     pagesOfTheBook.add(new Page("", R.string.page_199_main_text, 105, -1, -1, -1, -1));
     pagesOfTheBook.add(new Page("", R.string.page_200_main_text, 277, 175, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_201_main_text, 166, -1, -1, -1, -1)); //отметить в инвентаре, что волшебный глаз поместили на плащ
+    pagesOfTheBook.add(new Page("", R.string.page_202_main_text, 294, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_203_main_text, 62, -1, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("", R.string.page_204_main_text, 263, 18, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_205_main_text, 130, 14, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_206_main_text, 30, 101, 226, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_207_main_text, 174, 249, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_208_main_text, 85, 197, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_209_main_text, 60, 207, 214, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_210_main_text, 81, 190, 123, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_211_main_text, 238, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_212_main_text, -1, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_213_main_text, 66, -1, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой с когтистой рукой", R.string.page_214_main_text, 80, -1, -1, -1, -1)); //если выпадет волшебное кольцо, то автоматическая победа
+    pagesOfTheBook.add(new Page("", R.string.page_215_main_text, 174, 249, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_216_main_text, 62, -1, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("", R.string.page_217_main_text, 121, 16, 190, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_218_main_text, 48, 127, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_219_main_text, 190, -1, -1, -1, -1)); //тут нужна проверка на наличие порции воды в инвентаре и если ее нет, то вычесть 3 пункта силы
+    pagesOfTheBook.add(new Page("", R.string.page_220_main_text, 160, 95, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_221_main_text, 301, 245, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_222_main_text, 70, 149, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_223_main_text, 148, 238, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_224_main_text, 25, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_225_main_text, 254, 45, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_226_main_text, 198, 181, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой с половцем", R.string.page_227_main_text, 160, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_228_main_text, 146, -1, -1, -1, -1)); //нужно так же вычесть 1 ловкость из характеристик персотажа
+    pagesOfTheBook.add(new Page("", R.string.page_229_main_text, 186, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_230_main_text, 56, -1, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой с трехглавым драконом", R.string.page_231_main_text, 93, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_232_main_text, 170, 39, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_233_main_text, 280, 276, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой со вторым половцем", R.string.page_234_main_text, 160, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_235_main_text, 227, 268, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_236_main_text, 32, 280, 275, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_237_main_text, 116, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_238_main_text, 273, 131, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_239_main_text, 62, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_240_main_text, 43, 89, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_241_main_text, 248, 289, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_242_main_text, 245, 165, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("", R.string.page_243_main_text, 54, 167, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой с деревянным воином", R.string.page_244_main_text, 246, -1, -1, -1, -1)); //если выпадает волшебное кольцо, то это автоматическая победа
+    pagesOfTheBook.add(new Page("", R.string.page_245_main_text, -1, -1, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("", R.string.page_246_main_text, 263, 18, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_247_main_text, 73, 94, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_248_main_text, 225, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_249_main_text, 238, 257, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_250_main_text, 31, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_251_main_text, 146, -1, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("Бой с зеркальным двойником", R.string.page_252_main_text, 136, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_253_main_text, 190, -1, -1, -1, -1));
+//    pagesOfTheBook.add(new Page("", R.string.page_254_main_text, 263, 18, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_255_main_text, -1, -1, -1, -1, -1));
+    pagesOfTheBook.add(new Page("", R.string.page_256_main_text, 27, 241, 292, -1, -1));
 
 
 
