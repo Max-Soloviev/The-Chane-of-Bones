@@ -12,7 +12,7 @@
         android:id="@+id/pageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Вы подошли к воротам города"
+        android:text="Приветствую тебя, герой!"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/pageText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,31 +24,76 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="50dp"
-        android:text="Над головой возвышаются сложенные из вековых кедров стены."
+        android:text="Скорей уже начинай свое неординарное приключение"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
 
     <Button
         android:id="@+id/selectButtonOne"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
-        android:text="Повернуть налево"
+        android:text="Начать приключение"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/selectButtonTwo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pageText" />
+        app:layout_constraintTop_toBottomOf="@+id/pageText"
+        app:layout_constraintVertical_bias="0.121" />
 
     <Button
         android:id="@+id/selectButtonTwo"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
-        android:text="Повернуть направо"
+        android:layout_marginBottom="12dp"
+        android:text="Начать приключение"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/selectButtonOne"
-        app:layout_constraintTop_toBottomOf="@+id/pageText" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectButtonThree"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <Button
+        android:id="@+id/selectButtonThree"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginBottom="20dp"
+        android:text="Начать приключение"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectButtonFour"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Button
+        android:id="@+id/selectButtonFour"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginBottom="96dp"
+        android:text="Начать приключение"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectButtonFive"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <Button
+        android:id="@+id/selectButtonFive"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginBottom="184dp"
+        android:text="Начать приключение"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectButtonOne"
+        app:layout_constraintVertical_bias="0.152" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,9 +19,9 @@ public class PageActivity extends AppCompatActivity {
     private int selectedPage = 0;
     private Button buttonOne;
     private Button buttonTwo;
-//    private Button buttonThree;
-//    private Button buttonFour;
-//    private Button buttonFive;
+    private Button buttonThree;
+    private Button buttonFour;
+    private Button buttonFive;
     private TextView pageText;
     private TextView pageTitle;
     ArrayList<Page> pagesOfTheBook;
@@ -35,9 +35,9 @@ public class PageActivity extends AppCompatActivity {
         pageTitle = findViewById(R.id.pageTitle);
         buttonOne = findViewById(R.id.selectButtonOne);
         buttonTwo = findViewById(R.id.selectButtonTwo);
-//        buttonThree = findViewById(R.id.selectButtonThree);
-//        buttonFour = findViewById(R.id.selectButtonFour);
-//        buttonFive = findViewById(R.id.selectButtonFive);
+        buttonThree = findViewById(R.id.selectButtonThree);
+        buttonFour = findViewById(R.id.selectButtonFour);
+        buttonFive = findViewById(R.id.selectButtonFive);
 
         pagesOfTheBook = Book.createBook();
 
@@ -59,32 +59,32 @@ public class PageActivity extends AppCompatActivity {
             }
         });
 
-//        buttonThree.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonThreeAction);
-//                showPage();
-//
-//            }
-//        });
-//
-//        buttonFour.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonFourAction);
-//                showPage();
-//
-//            }
-//        });
-//
-//        buttonFive.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonFiveAction);
-//                showPage();
-//
-//            }
-//        });
+        buttonThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonThreeAction);
+                showPage();
+
+            }
+        });
+
+        buttonFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonFourAction);
+                showPage();
+
+            }
+        });
+
+        buttonFive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonFiveAction);
+                showPage();
+
+            }
+        });
     }
 
     private void showPage() {
