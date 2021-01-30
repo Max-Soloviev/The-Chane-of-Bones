@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Book {
     static ArrayList createBook () {
         ArrayList<Page> pagesOfTheBook = new ArrayList<>();
-        pagesOfTheBook.add(new Page("Вступление", R.string.page_0_main_text, 0, -1, -1, -1, -1));
+        pagesOfTheBook.add(new Page("Вступление", R.string.page_0_main_text, 1, -1, -1, -1, -1));
         pagesOfTheBook.add(new Page("", R.string.page_1_main_text, 65, -1, -1, -1, -1));
         pagesOfTheBook.add(new Page("", R.string.page_2_main_text, 294, -1, -1, -1, -1));
         pagesOfTheBook.add(new Page("", R.string.page_3_main_text, 67, 24, -1, -1, -1));

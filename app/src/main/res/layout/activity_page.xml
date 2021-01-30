@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Приветствую тебя, герой!"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/pageText"
+        android:layout_marginTop="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,78 +22,68 @@
     <TextView
         android:id="@+id/pageText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:padding="50dp"
         android:text="Скорей уже начинай свое неординарное приключение"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonOne"/>
 
     <Button
         android:id="@+id/selectButtonOne"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:text="Начать приключение"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pageText"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintBottom_toTopOf="@id/selectButtonTwo"
+        app:layout_constraintHorizontal_bias="0"/>
 
     <Button
         android:id="@+id/selectButtonTwo"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:layout_marginBottom="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:text="Начать приключение"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectButtonThree"
-        app:layout_constraintVertical_bias="0.916" />
+        app:layout_constraintBottom_toTopOf="@id/selectButtonThree"
+        app:layout_constraintHorizontal_bias="0"/>
 
     <Button
         android:id="@+id/selectButtonThree"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:text="Начать приключение"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectButtonFour"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintBottom_toTopOf="@id/selectButtonFour"
+        app:layout_constraintHorizontal_bias="0"/>
 
     <Button
         android:id="@+id/selectButtonFour"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:layout_marginBottom="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:text="Начать приключение"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectButtonFive"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintBottom_toTopOf="@id/selectButtonFive"
+        app:layout_constraintHorizontal_bias="0"/>
 
     <Button
         android:id="@+id/selectButtonFive"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:layout_marginBottom="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="Начать приключение"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectButtonOne"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintHorizontal_bias="0"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
