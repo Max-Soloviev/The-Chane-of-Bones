@@ -8,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -41,35 +42,8 @@ public class PageActivity extends AppCompatActivity {
 
         pagesOfTheBook = Book.createBook();
         showPage();
-        buttonOne.setVisibility(View.GONE);
-        buttonOne.setVisibility(View.VISIBLE);
-        if (pagesOfTheBook.get(selectedPage).buttonOneAction == -1)
-            buttonOne.setVisibility(View.GONE);
-        else buttonOne.setVisibility(View.VISIBLE);
+        pageText.setMovementMethod(new ScrollingMovementMethod());
 
-        buttonTwo.setVisibility(View.GONE);
-        buttonTwo.setVisibility(View.VISIBLE);
-        if (pagesOfTheBook.get(selectedPage).buttonTwoAction == -1)
-            buttonTwo.setVisibility(View.GONE);
-        else buttonTwo.setVisibility(View.VISIBLE);
-
-        buttonThree.setVisibility(View.GONE);
-        buttonThree.setVisibility(View.VISIBLE);
-        if (pagesOfTheBook.get(selectedPage).buttonThreeAction == -1)
-            buttonThree.setVisibility(View.GONE);
-        else buttonThree.setVisibility(View.VISIBLE);
-
-        buttonFour.setVisibility(View.GONE);
-        buttonFour.setVisibility(View.VISIBLE);
-        if (pagesOfTheBook.get(selectedPage).buttonFourAction == -1)
-            buttonFour.setVisibility(View.GONE);
-        else buttonFour.setVisibility(View.VISIBLE);
-
-        buttonFive.setVisibility(View.GONE);
-        buttonFive.setVisibility(View.VISIBLE);
-        if (pagesOfTheBook.get(selectedPage).buttonFiveAction == -1)
-            buttonFive.setVisibility(View.GONE);
-        else buttonFive.setVisibility(View.VISIBLE);
 
         buttonOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,6 +94,41 @@ public class PageActivity extends AppCompatActivity {
     private void showPage() {
         pageTitle.setText(pagesOfTheBook.get(selectedPage).titleText);
         pageText.setText(getString(pagesOfTheBook.get(selectedPage).mainText));
+
+        if (pagesOfTheBook.get(selectedPage).buttonOneAction == -1) {
+            buttonOne.setVisibility(View.GONE);
+        }
+        else {
+            buttonOne.setVisibility(View.VISIBLE);
+        }
+
+        if (pagesOfTheBook.get(selectedPage).buttonTwoAction == -1) {
+            buttonTwo.setVisibility(View.GONE);
+        }
+        else {
+            buttonTwo.setVisibility(View.VISIBLE);
+        }
+
+        if (pagesOfTheBook.get(selectedPage).buttonThreeAction == -1) {
+            buttonThree.setVisibility(View.GONE);
+        }
+        else {
+            buttonThree.setVisibility(View.VISIBLE);
+        }
+
+        if (pagesOfTheBook.get(selectedPage).buttonFourAction == -1) {
+            buttonFour.setVisibility(View.GONE);
+        }
+        else {
+            buttonFour.setVisibility(View.VISIBLE);
+        }
+
+        if (pagesOfTheBook.get(selectedPage).buttonFiveAction == -1) {
+            buttonFive.setVisibility(View.GONE);
+        }
+        else {
+            buttonFive.setVisibility(View.VISIBLE);
+        }
     }
 
     private void setSelectedPage(int page) {

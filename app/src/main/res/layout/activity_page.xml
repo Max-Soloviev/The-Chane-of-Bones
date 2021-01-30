@@ -29,51 +29,48 @@
         app:layout_constraintTop_toBottomOf="@+id/pageTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/selectButtonOne"/>
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonOne"
+        android:scrollbars = "vertical"/>
 
     <Button
         android:id="@+id/selectButtonOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
         android:text="Начать приключение"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonTwo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/selectButtonTwo"
-        app:layout_constraintHorizontal_bias="0"/>
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/selectButtonTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
         android:text="Начать приключение"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonThree"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/selectButtonThree"
-        app:layout_constraintHorizontal_bias="0"/>
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/selectButtonThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
         android:text="Начать приключение"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonFour"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/selectButtonFour"
-        app:layout_constraintHorizontal_bias="0"/>
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/selectButtonFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
         android:text="Начать приключение"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonFive"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/selectButtonFive"
-        app:layout_constraintHorizontal_bias="0"/>
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/selectButtonFive"
