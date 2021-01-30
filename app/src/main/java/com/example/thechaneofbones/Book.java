@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class Book {
     static ArrayList createBook () {
         ArrayList<Page> pagesOfTheBook = new ArrayList<>();
-        pagesOfTheBook.add(new Page("Вступление", R.string.page_0_main_text, 1, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_1_main_text, 65, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_2_main_text, 294, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_3_main_text, 67, 24, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_4_main_text, 56, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_5_main_text, 36, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_6_main_text, 280, 275, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_7_main_text, 280, 275, -1, -1, -1));
+        pagesOfTheBook.add(new Page("Вступление", R.string.page_0_main_text, 1, -1, -1, -1, -1, 0));
+        pagesOfTheBook.add(new Page("", R.string.page_1_main_text, 65, -1, -1, -1, -1, 1));
+        pagesOfTheBook.add(new Page("", R.string.page_2_main_text, 294, -1, -1, -1, -1, 2));
+        pagesOfTheBook.add(new Page("", R.string.page_3_main_text, 67, 24, -1, -1, -1,3));
+        pagesOfTheBook.add(new Page("", R.string.page_4_main_text, 56, -1, -1, -1, -1,4));
+        pagesOfTheBook.add(new Page("", R.string.page_5_main_text, 36, -1, -1, -1, -1,5));
+        pagesOfTheBook.add(new Page("", R.string.page_6_main_text, 280, 275, -1, -1, -1,6));
+        pagesOfTheBook.add(new Page("", R.string.page_7_main_text, 280, 275, -1, -1, -1,7));
 //    pagesOfTheBook.add(new Page("Бой с трехголовым драконом", "Две энергетические стрелы вылетают из вашего жезла и вонзаются в дракона. Чёрный ядовитый пар вырывается из его ран, но дракон продолжает приближаться (жезл сейчас бесполезен, вы лишаетесь его).\n" +
 //                " \n" +
 //                " ТРЁХГОЛОВЫЙ ДРАКОН: Сила 12\n" +
@@ -21,9 +21,9 @@ public class Book {
 //                " Очки от 3 до 7: Дракон кусает вас. Вы теряете 4 пункта Силы.\n" +
 //                " Очки от 8 до 12: Дракон получает удар мечом и теряет 3 пункта Силы.\n" +
 //                " \n" +
-//                " Если вы побеждаете, переход на 93.\n", 93, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_9_main_text, 283, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_10_main_text, 190, -1, -1, -1, -1));
+//                " Если вы побеждаете, переход на 93.\n", 93, -1, -1, -1, -1,8));
+        pagesOfTheBook.add(new Page("", R.string.page_9_main_text, 283, -1, -1, -1, -1,9));
+        pagesOfTheBook.add(new Page("", R.string.page_10_main_text, 190, -1, -1, -1, -1,10));
 //    pagesOfTheBook.add(new Page("Бой со вторым драконом", "Сейчас вам пригодится вся ваша Сила.\n" +
 //                " \n" +
 //                " ВТОРОЙ ДРАКОН: Сила 12\n" +
@@ -32,13 +32,13 @@ public class Book {
 //                " Очки от 2 до 6: Дракон ранил вас; вы теряете 3 пункта Силы.\n" +
 //                " Очки от 7 до 12: Дракон теряет 3 пункта Силы.\n" +
 //                " \n" +
-//                " Если вы побеждаете по итогам повторных поединков, то переходите на 68.\n", 68, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_12_main_text, 180, 50, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_13_main_text, -1, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_14_main_text, 12, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_15_main_text, 283, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_16_main_text, 120, 26, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_17_main_text, 186, -1, -1, -1, -1));
+//                " Если вы побеждаете по итогам повторных поединков, то переходите на 68.\n", 68, -1, -1, -1, -1,11));
+        pagesOfTheBook.add(new Page("", R.string.page_12_main_text, 180, 50, -1, -1, -1,12));
+        pagesOfTheBook.add(new Page("", R.string.page_13_main_text, -1, -1, -1, -1, -1,13));
+        pagesOfTheBook.add(new Page("", R.string.page_14_main_text, 12, -1, -1, -1, -1,14));
+        pagesOfTheBook.add(new Page("", R.string.page_15_main_text, 283, -1, -1, -1, -1,15));
+        pagesOfTheBook.add(new Page("", R.string.page_16_main_text, 120, 26, -1, -1, -1,16));
+        pagesOfTheBook.add(new Page("", R.string.page_17_main_text, 186, -1, -1, -1, -1,17));
 //    pagesOfTheBook.add(new Page("Бой с воином-лучником", "Ваше плечо касается одной из скульптурных фигурок - лучника - в тот момент, когда вы приземляетесь перед дверью. Фигурка, о которую вы ударяетесь, начинает расти. Воин вырастает до человеческих размеров и стреляет в вас из лука.\n" +
 //                " \n" +
 //                " ВОИН-ЛУЧНИК: Сила 9\n" +
@@ -47,7 +47,7 @@ public class Book {
 //                " Очки от 7 до 12: Вы уклоняетесь от стрелы, а лучник получает удар мечом и теряет 3 пункта Силы.\n" +
 //                " Если вам выпадает ВОЛШЕБНОЕ КОЛЬЦО, ваши Силы восстанавливаются.\n" +
 //                " \n" +
-//                " Если вы побеждаете в поединке, то переходите на 269.\n", 269, -1, -1, -1, -1));
+//                " Если вы побеждаете в поединке, то переходите на 269.\n", 269, -1, -1, -1, -1,18));
 //    pagesOfTheBook.add(new Page("Бой с базарным войном", "Ваш противник ловок и силен. Он осторожно кружит вокруг вас, крутит мечом так, что лезвие сверкает в свете факела.\n" +
 //                " \n" +
 //                " БАЗАРНЫЙ ВОИН С МЕЧОМ: Сила 9\n" +
@@ -56,16 +56,16 @@ public class Book {
 //                " Очки от 8 до 12: Вы успешно обороняетесь и наносите воину удар мечом; он теряет 3 пункта Силы.\n" +
 //                " Если вам выпадает ВОЛШЕБНОЕ КОЛЬЦО, ваши Силы полностью восстанавливаются.\n" +
 //                " \n" +
-//                " Если вы по итогам схваток побеждаете, переходите на 259.\n", 259, -1, -1, -1, -1));
+//                " Если вы по итогам схваток побеждаете, переходите на 259.\n", 259, -1, -1, -1, -1,19));
 //    pagesOfTheBook.add(new Page("", "От путника веет чем-то мрачным и зловещим. Вы ныряете в лес и в страхе убегаете. Отбежав достаточно, вы слышите шорох и замечаете, что незнакомец преследует вас, жалобно зовя по имени.\n" +
 //                " Вы не слишком-то слушаете его, понимая, что этот человек представляет для вас опасность.\n" +
 //                " Бросьте игральную кость один раз.\n" +
 //                " Очки от 0 до 2 - переход на 182.\n" +
 //                " Очки от 3 до 4 - переход на 232.\n" +
 //                " Очки от 5 до 6 - переход на 39.\n" +
-//                " ВОЛШЕБНОЕ КОЛЬЦО позволяет вам выбрать любой из номеров, предложенных выше.\n", 182, 232, 39, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_21_main_text, 153, 188, 177, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_22_main_text, 147, -1, -1, -1, -1));
+//                " ВОЛШЕБНОЕ КОЛЬЦО позволяет вам выбрать любой из номеров, предложенных выше.\n", 182, 232, 39, -1, -1,20));
+        pagesOfTheBook.add(new Page("", R.string.page_21_main_text, 153, 188, 177, -1, -1,21));
+        pagesOfTheBook.add(new Page("", R.string.page_22_main_text, 147, -1, -1, -1, -1,22));
 //    pagesOfTheBook.add(new Page("Бой со вторым волком", "Судьба сейчас благоприятствует вам. Вы избавились от одного из волков.\n" +
 //                " \n" +
 //                " ВТОРОЙ ВОЛК: Сила 12\n" +
@@ -74,16 +74,16 @@ public class Book {
 //                " Очки от 7 до 12: Вы успешно обороняетесь, и волк теряет 3 пункта Силы.\n" +
 //                " Если вам выпало ВОЛШЕБНОЕ КОЛЬЦО, вы восстанавливаете свои Силы.\n" +
 //                " \n" +
-//                " Итоговая победа переводит вас на 230.\n", 230, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_24_main_text, 128, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_25_main_text, 256, 106, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_26_main_text, 102, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_27_main_text, -1, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_28_main_text, 42, 24, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_29_main_text, 186, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_30_main_text, 62, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_31_main_text, 12, -1, -1, -1, -1));
-        pagesOfTheBook.add(new Page("", R.string.page_32_main_text, 82, 98, -1, -1, -1));
+//                " Итоговая победа переводит вас на 230.\n", 230, -1, -1, -1, -1,23));
+        pagesOfTheBook.add(new Page("", R.string.page_24_main_text, 128, -1, -1, -1, -1,24));
+        pagesOfTheBook.add(new Page("", R.string.page_25_main_text, 256, 106, -1, -1, -1,25));
+        pagesOfTheBook.add(new Page("", R.string.page_26_main_text, 102, -1, -1, -1, -1,26));
+        pagesOfTheBook.add(new Page("", R.string.page_27_main_text, -1, -1, -1, -1, -1,27));
+        pagesOfTheBook.add(new Page("", R.string.page_28_main_text, 42, 24, -1, -1, -1,28));
+        pagesOfTheBook.add(new Page("", R.string.page_29_main_text, 186, -1, -1, -1, -1,29));
+        pagesOfTheBook.add(new Page("", R.string.page_30_main_text, 62, -1, -1, -1, -1,30));
+        pagesOfTheBook.add(new Page("", R.string.page_31_main_text, 12, -1, -1, -1, -1,31));
+        pagesOfTheBook.add(new Page("", R.string.page_32_main_text, 82, 98, -1, -1, -1,32));
 //    pagesOfTheBook.add(new Page("Бой с разбойником", "Мальчик ведет вас по тёмным улицам. Вы хотите спросить, правильно ли он ведёт вас. Вдруг две одетые в чёрные плащи с капюшонами фигуры появляются из темноты. Вы видите, как они раскручивают над головой кистен. Разбойники бросаются к вам.\n" +
 //                " Вы выхватываете меч, приготовившись защищаться. К вашему изумлению мальчишка подставляет ногу одному из разбойников, тот спотыкается и летит в канаву.\n" +
 //                " У вас остаётся только один противник.\n" +

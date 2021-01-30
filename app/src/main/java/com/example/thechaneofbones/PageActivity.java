@@ -97,36 +97,31 @@ public class PageActivity extends AppCompatActivity {
 
         if (pagesOfTheBook.get(selectedPage).buttonOneAction == -1) {
             buttonOne.setVisibility(View.GONE);
-        }
-        else {
+        } else {
             buttonOne.setVisibility(View.VISIBLE);
         }
 
         if (pagesOfTheBook.get(selectedPage).buttonTwoAction == -1) {
             buttonTwo.setVisibility(View.GONE);
-        }
-        else {
+        } else {
             buttonTwo.setVisibility(View.VISIBLE);
         }
 
         if (pagesOfTheBook.get(selectedPage).buttonThreeAction == -1) {
             buttonThree.setVisibility(View.GONE);
-        }
-        else {
+        } else {
             buttonThree.setVisibility(View.VISIBLE);
         }
 
         if (pagesOfTheBook.get(selectedPage).buttonFourAction == -1) {
             buttonFour.setVisibility(View.GONE);
-        }
-        else {
+        } else {
             buttonFour.setVisibility(View.VISIBLE);
         }
 
         if (pagesOfTheBook.get(selectedPage).buttonFiveAction == -1) {
             buttonFive.setVisibility(View.GONE);
-        }
-        else {
+        } else {
             buttonFive.setVisibility(View.VISIBLE);
         }
     }

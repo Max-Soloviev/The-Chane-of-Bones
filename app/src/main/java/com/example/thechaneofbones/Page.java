@@ -8,8 +8,9 @@ public class Page {
     int buttonThreeAction;
     int buttonFourAction;
     int buttonFiveAction;
+    int id;
 
-    Page(String titleText, int mainText, int buttonOneAction, int buttonTwoAction, int buttonThreeAction, int buttonFourAction, int buttonFiveAction){
+    Page(String titleText, int mainText, int buttonOneAction, int buttonTwoAction, int buttonThreeAction, int buttonFourAction, int buttonFiveAction, int id){
         this.titleText = titleText;
         this.mainText = mainText;
         this.buttonOneAction = buttonOneAction;
@@ -17,6 +18,7 @@ public class Page {
         this.buttonThreeAction = buttonThreeAction;
         this.buttonFourAction = buttonFourAction;
         this.buttonFiveAction = buttonFiveAction;
+        this.id = id;
 
     }
 
