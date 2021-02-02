@@ -124,10 +124,21 @@ public class PageActivity extends AppCompatActivity {
         } else {
             buttonFive.setVisibility(View.VISIBLE);
         }
+
+        private void setSelectedPage (int page) {
+            selectedPage = page;
+        }
     }
 
-    private void setSelectedPage(int page) {
-        selectedPage = page;
+    Page findPageById(int id) {
 
+        Page pageInformation;
+
+        for (Page page : pagesOfTheBook) {
+            if (page.id == id); {
+                pageInformation = page;
+            }
+            return pageInformation;
+        }
     }
 }
