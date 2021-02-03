@@ -48,7 +48,7 @@ public class PageActivity extends AppCompatActivity {
         buttonOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonOneAction);
+                setSelectedPage(findPageById(selectedPage).buttonOneAction);
                 showPage();
 
             }
@@ -57,7 +57,7 @@ public class PageActivity extends AppCompatActivity {
         buttonTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonTwoAction);
+                setSelectedPage(findPageById(selectedPage).buttonTwoAction);
                 showPage();
 
             }
@@ -66,7 +66,7 @@ public class PageActivity extends AppCompatActivity {
         buttonThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonThreeAction);
+                setSelectedPage(findPageById(selectedPage).buttonThreeAction);
                 showPage();
 
             }
@@ -75,7 +75,7 @@ public class PageActivity extends AppCompatActivity {
         buttonFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonFourAction);
+                setSelectedPage(findPageById(selectedPage).buttonFourAction);
                 showPage();
 
             }
@@ -84,7 +84,7 @@ public class PageActivity extends AppCompatActivity {
         buttonFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSelectedPage(pagesOfTheBook.get(selectedPage).buttonFiveAction);
+                setSelectedPage(findPageById(selectedPage).buttonFiveAction);
                 showPage();
 
             }
@@ -92,53 +92,53 @@ public class PageActivity extends AppCompatActivity {
     }
 
     private void showPage() {
-        pageTitle.setText(pagesOfTheBook.get(selectedPage).titleText);
-        pageText.setText(getString(pagesOfTheBook.get(selectedPage).mainText));
+        pageTitle.setText(findPageById(selectedPage).titleText);
+        pageText.setText(getString(findPageById(selectedPage).mainText));
 
-        if (pagesOfTheBook.get(selectedPage).buttonOneAction == -1) {
+        if (findPageById(selectedPage).buttonOneAction == -1) {
             buttonOne.setVisibility(View.GONE);
         } else {
             buttonOne.setVisibility(View.VISIBLE);
         }
 
-        if (pagesOfTheBook.get(selectedPage).buttonTwoAction == -1) {
+        if (findPageById(selectedPage).buttonTwoAction == -1) {
             buttonTwo.setVisibility(View.GONE);
         } else {
             buttonTwo.setVisibility(View.VISIBLE);
         }
 
-        if (pagesOfTheBook.get(selectedPage).buttonThreeAction == -1) {
+        if (findPageById(selectedPage).buttonThreeAction == -1) {
             buttonThree.setVisibility(View.GONE);
         } else {
             buttonThree.setVisibility(View.VISIBLE);
         }
 
-        if (pagesOfTheBook.get(selectedPage).buttonFourAction == -1) {
+        if (findPageById(selectedPage).buttonFourAction == -1) {
             buttonFour.setVisibility(View.GONE);
         } else {
             buttonFour.setVisibility(View.VISIBLE);
         }
 
-        if (pagesOfTheBook.get(selectedPage).buttonFiveAction == -1) {
+        if (findPageById(selectedPage).buttonFiveAction == -1) {
             buttonFive.setVisibility(View.GONE);
         } else {
             buttonFive.setVisibility(View.VISIBLE);
         }
+    }
 
-        private void setSelectedPage (int page) {
-            selectedPage = page;
-        }
+    private void setSelectedPage (int pageId) {
+        selectedPage = pageId;
     }
 
     Page findPageById(int id) {
 
-        Page pageInformation;
+        Page pageInformation = null;
 
         for (Page page : pagesOfTheBook) {
-            if (page.id == id); {
+            if (page.id == id) {
                 pageInformation = page;
             }
-            return pageInformation;
         }
+        return pageInformation;
     }
 }

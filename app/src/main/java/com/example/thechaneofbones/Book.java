@@ -279,7 +279,7 @@ public class Book {
         pagesOfTheBook.add(new Page("", R.string.page_215_main_text, 174, 249, -1, -1, -1,215));
         pagesOfTheBook.add(new Page("", R.string.page_216_main_text, 62, -1, -1, -1, -1,216));
 //    pagesOfTheBook.add(new Page("", R.string.page_217_main_text, 121, 16, 190, -1, -1,217));
-        pagesOfTheBook.add(new Page("", R.string.page_218_main_text, 48, 127, -1, -1, -1,218));
+        pagesOfTheBook.add(new Page("", R.string.page_218_main_text, 127, 48, -1, -1, -1,218));
         pagesOfTheBook.add(new Page("", R.string.page_219_main_text, 190, -1, -1, -1, -1,219)); //тут нужна проверка на наличие порции воды в инвентаре и если ее нет, то вычесть 3 пункта силы
         pagesOfTheBook.add(new Page("", R.string.page_220_main_text, 160, 95, -1, -1, -1,220));
         pagesOfTheBook.add(new Page("", R.string.page_221_main_text, 301, 245, -1, -1, -1,221));
