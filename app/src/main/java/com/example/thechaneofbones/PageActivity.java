@@ -109,30 +109,35 @@ public class PageActivity extends AppCompatActivity {
             buttonOne.setVisibility(View.GONE);
         } else {
             buttonOne.setVisibility(View.VISIBLE);
+            buttonOne.setText(String.valueOf(findPageById(selectedPage).buttonOneAction));
         }
 
         if (findPageById(selectedPage).buttonTwoAction == -1) {
             buttonTwo.setVisibility(View.GONE);
         } else {
             buttonTwo.setVisibility(View.VISIBLE);
+            buttonTwo.setText(String.valueOf(findPageById(selectedPage).buttonTwoAction));
         }
 
         if (findPageById(selectedPage).buttonThreeAction == -1) {
             buttonThree.setVisibility(View.GONE);
         } else {
             buttonThree.setVisibility(View.VISIBLE);
+            buttonThree.setText(String.valueOf(findPageById(selectedPage).buttonThreeAction));
         }
 
         if (findPageById(selectedPage).buttonFourAction == -1) {
             buttonFour.setVisibility(View.GONE);
         } else {
             buttonFour.setVisibility(View.VISIBLE);
+            buttonFour.setText(String.valueOf(findPageById(selectedPage).buttonFourAction));
         }
 
         if (findPageById(selectedPage).buttonFiveAction == -1) {
             buttonFive.setVisibility(View.GONE);
         } else {
             buttonFive.setVisibility(View.VISIBLE);
+            buttonFive.setText(String.valueOf(findPageById(selectedPage).buttonFiveAction));
         }
 
         if (findPageById(selectedPage).buttonRollDiceAction == -1) {
