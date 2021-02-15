@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ public class PageActivity extends AppCompatActivity {
     private Button buttonThree;
     private Button buttonFour;
     private Button buttonFive;
+    private Button buttonRollDice;
     private TextView pageText;
     private TextView pageTitle;
     ArrayList<Page> pagesOfTheBook;
@@ -39,6 +41,7 @@ public class PageActivity extends AppCompatActivity {
         buttonThree = findViewById(R.id.selectButtonThree);
         buttonFour = findViewById(R.id.selectButtonFour);
         buttonFive = findViewById(R.id.selectButtonFive);
+        buttonRollDice = findViewById(R.id.selectButtonRollDice);
 
         pagesOfTheBook = Book.createBook();
         showPage();
@@ -89,6 +92,13 @@ public class PageActivity extends AppCompatActivity {
 
             }
         });
+
+            buttonRollDice.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            rollDice ();
+        }
+    });
     }
 
     private void showPage() {
@@ -124,6 +134,16 @@ public class PageActivity extends AppCompatActivity {
         } else {
             buttonFive.setVisibility(View.VISIBLE);
         }
+
+        if (findPageById(selectedPage).buttonRollDiceAction == -1) {
+            buttonRollDice.setVisibility(View.GONE);
+        } else {
+            buttonRollDice.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private void rollDice () {
+        Toast.makeText(getApplicationContext(), "Бросок кубика", Toast.LENGTH_SHORT).show();
     }
 
     private void setSelectedPage (int pageId) {
@@ -141,4 +161,5 @@ public class PageActivity extends AppCompatActivity {
         }
         return pageInformation;
     }
+
 }
