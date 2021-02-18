@@ -101,50 +101,26 @@ public class PageActivity extends AppCompatActivity {
     });
     }
 
+    public void showButton (Button button, int buttonAction) {
+        if (buttonAction == -1) {
+            button.setVisibility(View.GONE);
+        } else {
+            button.setVisibility(View.VISIBLE);
+            button.setText(String.valueOf(buttonAction));
+            button.postInvalidate();
+        }
+    }
     private void showPage() {
         pageTitle.setText(findPageById(selectedPage).titleText);
         pageText.setText(getString(findPageById(selectedPage).mainText));
 
-        if (findPageById(selectedPage).buttonOneAction == -1) {
-            buttonOne.setVisibility(View.GONE);
-        } else {
-            buttonOne.setVisibility(View.VISIBLE);
-            buttonOne.setText(String.valueOf(findPageById(selectedPage).buttonOneAction));
-        }
+        showButton(buttonOne, findPageById(selectedPage).buttonOneAction);
+        showButton(buttonTwo, findPageById(selectedPage).buttonTwoAction);
+        showButton(buttonThree, findPageById(selectedPage).buttonThreeAction);
+        showButton(buttonFour, findPageById(selectedPage).buttonFourAction);
+        showButton(buttonFive, findPageById(selectedPage).buttonFiveAction);
+        showButton(buttonRollDice, findPageById(selectedPage).buttonRollDiceAction);
 
-        if (findPageById(selectedPage).buttonTwoAction == -1) {
-            buttonTwo.setVisibility(View.GONE);
-        } else {
-            buttonTwo.setVisibility(View.VISIBLE);
-            buttonTwo.setText(String.valueOf(findPageById(selectedPage).buttonTwoAction));
-        }
-
-        if (findPageById(selectedPage).buttonThreeAction == -1) {
-            buttonThree.setVisibility(View.GONE);
-        } else {
-            buttonThree.setVisibility(View.VISIBLE);
-            buttonThree.setText(String.valueOf(findPageById(selectedPage).buttonThreeAction));
-        }
-
-        if (findPageById(selectedPage).buttonFourAction == -1) {
-            buttonFour.setVisibility(View.GONE);
-        } else {
-            buttonFour.setVisibility(View.VISIBLE);
-            buttonFour.setText(String.valueOf(findPageById(selectedPage).buttonFourAction));
-        }
-
-        if (findPageById(selectedPage).buttonFiveAction == -1) {
-            buttonFive.setVisibility(View.GONE);
-        } else {
-            buttonFive.setVisibility(View.VISIBLE);
-            buttonFive.setText(String.valueOf(findPageById(selectedPage).buttonFiveAction));
-        }
-
-        if (findPageById(selectedPage).buttonRollDiceAction == -1) {
-            buttonRollDice.setVisibility(View.GONE);
-        } else {
-            buttonRollDice.setVisibility(View.VISIBLE);
-        }
     }
 
     private void rollDice () {
