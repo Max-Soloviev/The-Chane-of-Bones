@@ -11,6 +11,11 @@ public class Page {
     int buttonRollDiceAction;
     int id;
 
+    public class ButtonAction {
+        int buttonText;
+        int pageId;
+    }
+
     Page(String titleText, int mainText, int buttonOneAction, int buttonTwoAction, int buttonThreeAction, int buttonFourAction, int buttonFiveAction, int id, int buttonRollDiceAction){
         this.titleText = titleText;
         this.mainText = mainText;

@@ -111,15 +111,17 @@ public class PageActivity extends AppCompatActivity {
         }
     }
     private void showPage() {
+        Page page = findPageById(selectedPage);
+
         pageTitle.setText(findPageById(selectedPage).titleText);
         pageText.setText(getString(findPageById(selectedPage).mainText));
 
-        showButton(buttonOne, findPageById(selectedPage).buttonOneAction);
-        showButton(buttonTwo, findPageById(selectedPage).buttonTwoAction);
-        showButton(buttonThree, findPageById(selectedPage).buttonThreeAction);
-        showButton(buttonFour, findPageById(selectedPage).buttonFourAction);
-        showButton(buttonFive, findPageById(selectedPage).buttonFiveAction);
-        showButton(buttonRollDice, findPageById(selectedPage).buttonRollDiceAction);
+        showButton(buttonOne, page.buttonOneAction);
+        showButton(buttonTwo, page.buttonTwoAction);
+        showButton(buttonThree, page.buttonThreeAction);
+        showButton(buttonFour, page.buttonFourAction);
+        showButton(buttonFive, page.buttonFiveAction);
+        showButton(buttonRollDice, page.buttonRollDiceAction);
 
     }
 
