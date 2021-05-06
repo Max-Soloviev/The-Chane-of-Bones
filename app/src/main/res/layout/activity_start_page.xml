@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:padding="20dp"
+    tools:context=".StartPageActivity">
+
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Приветствую тебя, герой!"
+        android:textColor="@color/white"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pageText"
+        android:layout_width="376dp"
+        android:layout_height="176dp"
+        android:padding="50dp"
+        android:scrollbars="vertical"
+        android:text="Скорей уже начинай свое неординарное приключение"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/selectButtonOne"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Новое приключение"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selectButtonTwo"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Продолжить приключение"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selectButtonThree"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Общий рейтинг героев"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selectButtonFour"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        app:layout_constraintBottom_toTopOf="@+id/selectButtonFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selectButtonFive"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:text="Выйти"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

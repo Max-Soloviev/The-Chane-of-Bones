@@ -9,11 +9,19 @@ public class Hero {
     int realDexterity;
     int maxIntelligence;
     int realIntelligence;
-    int maxMoney;
+    int startMoney;
     int realMoney;
     ArrayList<String> heroBag;
 
-    Hero(int maxStrength, int maxDexterity, int maxIntelligence, int maxMoney, ArrayList<String> heroBag) {
-// тут написать метод создания нового персонажа
+    Hero(int maxStrength, int maxDexterity, int maxIntelligence, int startMoney, ArrayList<String> heroBag) {
+        this.maxStrength = maxStrength;
+        this.realStrength = maxStrength;
+        this.maxDexterity = maxDexterity;
+        this.realDexterity = maxDexterity;
+        this.maxIntelligence = maxIntelligence;
+        this.realIntelligence = maxIntelligence;
+        this.startMoney = startMoney;
+        this.realMoney = startMoney;
+        this.heroBag = heroBag;
     }
 }

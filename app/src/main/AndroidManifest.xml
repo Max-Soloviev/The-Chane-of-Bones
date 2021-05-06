@@ -12,8 +12,8 @@
         <activity
             android:name=".PageActivity"
             android:label="@string/title_activity_page"
-            android:theme="@style/Theme.TheChaneOfBones.NoActionBar"></activity>
-        <activity android:name=".MainActivity">
+            android:theme="@style/Theme.TheChaneOfBones.NoActionBar" />
+        <activity android:name=".StartPageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

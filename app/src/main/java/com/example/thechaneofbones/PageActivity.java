@@ -18,7 +18,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class PageActivity extends AppCompatActivity {
-    private int selectedPage = 0;
+    private int selectedPage = 302;
     private Button buttonOne;
     private Button buttonTwo;
     private Button buttonThree;
@@ -139,6 +139,11 @@ public class PageActivity extends AppCompatActivity {
         } else {
             buttonStartCombat.setVisibility(View.GONE);
         }
+    }
+
+    private void createHero () {
+        Hero hero = new Hero(20, 4, 3, 30, new ArrayList<>()); // дописать метод создания героя и создать кнопку
+
     }
 
     private void rollDice () {
