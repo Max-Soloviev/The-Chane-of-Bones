@@ -25,6 +25,7 @@ public class PageActivity extends AppCompatActivity {
     private Button buttonFour;
     private Button buttonFive;
     private Button buttonRollDice;
+    private Button buttonStartCombat;
     private TextView pageText;
     private TextView pageTitle;
     ArrayList<Page> pagesOfTheBook;
@@ -42,6 +43,7 @@ public class PageActivity extends AppCompatActivity {
         buttonFour = findViewById(R.id.selectButtonFour);
         buttonFive = findViewById(R.id.selectButtonFive);
         buttonRollDice = findViewById(R.id.selectButtonRollDice);
+        buttonStartCombat = findViewById(R.id.selectButtonStartCombat);
 
         pagesOfTheBook = Book.createBook();
         showPage();
@@ -96,9 +98,18 @@ public class PageActivity extends AppCompatActivity {
             buttonRollDice.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
             rollDice ();
         }
     });
+
+        buttonStartCombat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                StartCombat ();
+            }
+        });
     }
 
     public void showButton (Button button, int buttonAction) {
@@ -123,13 +134,23 @@ public class PageActivity extends AppCompatActivity {
         showButton(buttonFive, page.buttonFiveAction);
         showButton(buttonRollDice, page.buttonRollDiceAction);
 
+        if (page.enemyMaxStrength > 0) {
+            buttonStartCombat.setVisibility(View.VISIBLE);
+        } else {
+            buttonStartCombat.setVisibility(View.GONE);
+        }
     }
 
     private void rollDice () {
         Toast.makeText(getApplicationContext(), "Бросок кубика", Toast.LENGTH_SHORT).show();
     }
 
+    private void StartCombat () {
+        Toast.makeText(getApplicationContext(), "Начать бой", Toast.LENGTH_SHORT).show();
+    }
+
     private void setSelectedPage (int pageId) {
+
         selectedPage = pageId;
     }
 
